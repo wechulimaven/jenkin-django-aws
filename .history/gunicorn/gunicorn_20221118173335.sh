@@ -13,7 +13,7 @@ echo "Migrations done"
 cd /var/lib/jenkins/workspace/dagizo_CICD
 
 sudo cp -rf gunicorn/gunicorn.socket /etc/systemd/system/
-sudo cp -rf gunicorn/gunicorn.service /etc/systemd/system/
+sudo cp -rf gunicorn.service /etc/systemd/system/
 
 echo "$USER"
 echo "$PWD"

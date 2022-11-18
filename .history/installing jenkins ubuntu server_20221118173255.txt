@@ -54,7 +54,6 @@ sudo chmod -R 777 logs  // GIVES ADMIN FULL PERMISSION TO LOGS FOLDER
 
 THEN INSTALL PYTHON PIP IN server
 
-sudo apt install python3-pip
 
 STEP 3
 // CREATE jenkinsfile (Contains pipelines ) to setup the python env script, gunicorn script and nginx script
