@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "USEEER $USER"
+
 if [ -d "env" ] 
 then
     echo "Python virtual environment exists." 
@@ -22,4 +22,3 @@ fi
 
 sudo chmod -R 777 logs
 
-echo "DONE SETTING UP ENV"

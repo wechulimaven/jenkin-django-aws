@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "USEEER $USER"
+
 if [ -d "env" ] 
 then
     echo "Python virtual environment exists." 
