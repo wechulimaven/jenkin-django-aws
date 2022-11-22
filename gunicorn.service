@@ -7,7 +7,6 @@ After=network.target
 User=ubuntu
 Group=www-data
 WorkingDirectory=/var/lib/jenkins/workspace/dagizo_CICD/app
-#ExecStart=gunicorn app.wsgi:application
 ExecStart=/var/lib/jenkins/workspace/dagizo_CICD/env/bin/gunicorn app.wsgi:application
 
 [Install]
