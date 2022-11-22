@@ -59,9 +59,6 @@ sudo apt install python3-pip
 
 ADD ROOT USER TO GROUP
 
-sudo adduser root www-data
-
-
 STEP 3
 // CREATE jenkinsfile (Contains pipelines ) to setup the python env script, gunicorn script and nginx script
 EXAMPLE
@@ -103,9 +100,3 @@ AT THIS STAGE GIVE JENKIN ROOT ACCESS PERMISSION WITH NO PASSWORD
 
 jenkins ALL=(ALL) NOPASSWD: ALL
 
-
-
-
-
-
-http://54.173.246.47:8080/

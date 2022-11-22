@@ -7,12 +7,11 @@ After=network.target
 User=sammy
 Group=www-data
 WorkingDirectory=/var/lib/jenkins/workspace/dagizo_CICD/app
-ExecStart=/var/lib/jenkins/workspace/dagizo_CICD/env/bin/gunicorn \
-          --error-logfile - /var/lib/jenkins/workspace/dagizo_CICD/error.log \
+ExecStart=/home/sammy/myprojectdir/myprojectenv/bin/gunicorn \
+          --access-logfile - \
           --workers 3 \
-          --capture-output --log-level debug \
           --bind unix:/run/gunicorn.sock \
-          app.wsgi:application
+          myproject.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
